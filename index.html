@@ -295,7 +295,7 @@
             }
 
             .hero {
-                margin-top: 172px;
+                margin-top: 100px;
             }
         
             .hero-content {
@@ -2508,17 +2508,22 @@
                 <img src="logo.png" alt="Cardápio Digital" height="80">
             </a>
 
-            <div class="d-flex align-items-center gap-3">
-                <!-- Contato link -->
-                <a class="nav-link" href="#contact">Contato</a>
+            <!-- Botão toggler deve estar junto da div collapse -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <!-- CTA Button -->
-                <a href="#cta" class="btn btn-destaque">Criar Cardápio</a>
-
-                <!-- Navbar toggler for mobile -->
-                <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <!-- Conteúdo que vai colapsar -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cta" class="btn btn-destaque">Criar Cardápio</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
